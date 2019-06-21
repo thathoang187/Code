@@ -1,7 +1,6 @@
 			<!DOCTYPE html>
 			<html>
 			<head>
-				<meta charset="utf-8">
 				<title>Kênh Táo - Apple Blog: iPhone • iPad • iOS • Jailbreak</title>
 				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +80,7 @@
 									<a href="#">
 										<i class="fab fa-instagram" style="color: #3f88c5"></i>
 									</a>
-								</li> 
+								</li>
 								<li>
 									<a href="#">
 										<i class="fab fa-pinterest" style="color: #f36722"></i>
@@ -107,12 +106,9 @@
 						</div>
 					</div>
 
-
-
 		<div class="normal-w2">
 			<div class="slideshow-container">
-
-				<div class="mySlides fade">
+					<div class="mySlides fade">
 							<div class="slides">
 						  	<a href="#"><img src="/image/Jailbreak-0Day-Exploit.jpg"></a>
 						  <div class="text">
@@ -174,7 +170,7 @@
 					</div>
 					</div>
 			</div>
-
+			
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
@@ -494,33 +490,37 @@
 							</p>
 					</div>
 						<div class="scroll">
-							<button onclick="topFunction()" id="myBtn" title="Top"><i class="fas fa-angle-up"></i>
-							</button>
+							<button onclick="topFunction()" id="myBtn" title="Top"><i class="fas fa-angle-up"></i></button>
 						</div>
 				</div>
 
 				<script>
 					var slideIndex = 1;
 					showSlides(slideIndex);
+
 					function plusSlides(n) {
 					  showSlides(slideIndex += n);
 					}
+
+					// function currentSlide(n) {
+					//   showSlides(slideIndex = n);
+					// }
+
 					function showSlides(n) {
 					  var i;
 					  var slides = document.getElementsByClassName("mySlides");
-					  if (n > slides.length) {
-					  	slideIndex = 1;
-					  }    
-					  if (n < 1) {
-					  	slideIndex = slides.length;
-					  }
+					  // var dots = document.getElementsByClassName("dot");
+					  if (n > slides.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = slides.length}
 					  for (i = 0; i < slides.length; i++) {
-					      slides[i].style.display = "none"; 
+					      slides[i].style.display = "none";  
 					  }
-					  slides[slideIndex-1].style.display = "block";
-					  setTimeout(mySlides, 5000);
- 					}
-
+					  // for (i = 0; i < dots.length; i++) {
+					  //     dots[i].className = dots[i].className.replace(" active", "");
+					  // }
+					  slides[slideIndex-1].style.display = "block";  
+					  // dots[slideIndex-1].className += " active";
+					}
 
 					window.onscroll = function() {scrollFunction()};
 
@@ -534,8 +534,7 @@
 
 					function topFunction() {
 					  document.body.scrollTop = 0;
-					  document.documentElement.scrollTop = 0;
-					  setTimeout(scrollTop, 5000);
+					  document.documentElement.scrollTop = 0; 
 					}
 
 					</script>
