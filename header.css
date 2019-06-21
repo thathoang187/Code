@@ -127,12 +127,13 @@
       float: left;
       display: flex;
       flex-direction: row;
-  
-    }
+      padding-top: 15px;
+      }
+
     .slides {
       width: 345px;
       float: left;
-      padding-left: 9px;
+      padding-left: 10px;
     }
 
     .mySlides img {
