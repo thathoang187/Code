@@ -127,7 +127,7 @@
       float: left;
       display: flex;
       flex-direction: row;
-      padding-top: 15px;
+      padding-top: 10px;
       }
 
     .slides {
@@ -166,12 +166,12 @@
 
 
     .next {
-      right: 11px;
+      right: 8px;
       border-radius: 3px 0 0 3px;
     }
 
     .prev {
-      left: 9px;
+      left: 10px;
     }
     .slideshow-container:hover .prev, .slideshow-container:hover .next {
       display: block;
