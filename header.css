@@ -8,28 +8,34 @@
             }
 
             .normal-wrapper {
-                 width: 1073px;
+                 width: 1050px;
                  height: 51px;
                  margin: 0 auto;
                  background: #ffffff; 
                  position: relative;
                  overflow: inherit;
-                 padding-right: 15px;
-                 padding-left: 38px;
+                 padding: 0;
+
             }
 
-            .logo-container a {
+            .logo-container img {
                 float: left;
                 color:#3e7db9;
-                font-size: 50px;
+                width: 51px;
+                height: 51px;
                 margin: 0px;
+                position: absolute;
+                top: -1%;
+               
             } 
 
             .navbar {
+              height: 51px;
               display: inline-block; 
               overflow: hidden;
               background-color: #ffffff;
-              padding-left: 43px;
+              padding-left: 77px;
+              align-items: center;
             }
 
             .navbar a {
@@ -101,7 +107,6 @@
                 position: absolute;
                 right: 0; 
                 top: 0;
-                margin-right: 35px;
                 height: 51px;
 
               }
