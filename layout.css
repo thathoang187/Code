@@ -52,7 +52,7 @@
                 font-size: 15px;
                 line-height: 20px;
                 font-weight: 300px;
-                  color: #444;
+                color: #444;
                 letter-spacing: .5px;
                 margin-right: 10px;
               }
@@ -75,14 +75,18 @@
               }
 
               .content-title h2 {
-                color: #333379;
+                color: #333333;
                 font-size: 20px;
                 margin-top: 20px;
                 margin-left: 20px;
                 margin-right: 50px;
               }
+              .content-title h2:hover {
+                  color: #358dff;
+              }
+
               .content-title .line-author {
-                color: #9a9a9a;
+                  color: #9a9a9a;
                   font-size: 14px;
                   font-weight: 300;
                   margin: 5px 0;
